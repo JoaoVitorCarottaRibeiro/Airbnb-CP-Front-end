@@ -795,6 +795,12 @@ body{
     margin: 0 10px; 
 }
 
+.container-resp{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
 /* ---------------------------------- */
 
 .scroll-box {
@@ -968,20 +974,23 @@ body{
 /* -------------------Responsividade------------------------------- */
 
     @media (max-width: 743px) {
+
+    /* ------------------Header---------------------- */
+
         .logo-img {
-        content: url('../../../public/imagens/airbnb-img.jpg');
-        height: 50px;
-        width: 50px;
-        border-radius: 10px;
-        margin-left: 10px;
+            content: url('../../../public/imagens/airbnb-img.jpg');
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            margin-left: 10px;
         }
 
         .busca-site, .botoes, .login {
-        display: none; 
+            display: none; 
         }
         
         .menu-btn, .menu-text {
-        display: inline-block; 
+            display: inline-block; 
         }
         
         .text1{
@@ -1025,5 +1034,29 @@ body{
 
         .comp-e-salvar{
             display: none;
+        }
+
+        /* ----------------------FOOTER------------------ */
+
+        .footer-sections{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .footer-column-2{
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .footer-column{
+            margin-top: 15px;
+        }
+
+        .container-resp{
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            gap: 25px;
         }
     }
