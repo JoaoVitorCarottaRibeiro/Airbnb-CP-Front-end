@@ -971,6 +971,10 @@ body{
     display: none
   }
 
+  .titulo-ap-2{
+    display: none;
+  }
+
 /* -------------------Responsividade------------------------------- */
 
     @media (max-width: 743px) {
@@ -1036,6 +1040,29 @@ body{
             display: none;
         }
 
+        /* ------------------------FOTOS---------------------- */
+
+        .photos{
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            scroll-snap-type: x mandatory;
+            gap: 0;
+            height: 100vh;
+        }
+
+        .photos div {
+            scroll-snap-align: center;
+            min-width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* --------------------------------------------------- */
+
         /* ----------------------FOOTER------------------ */
 
         .footer-sections{
@@ -1059,4 +1086,76 @@ body{
             flex-direction: column;
             gap: 25px;
         }
+
+        /* ------------------------------------------------------------------ */
+
+        .titulo-ap-2{
+            display: inline-block;
+            font-size: 35px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+
+        .scroll-box{
+            display: none;
+        }
+
+        .texto-aproveitar{
+            width: auto;
+        }
+
+       .fotografias{
+            display: flex;
+       }
+
+       .quartos{
+            width:85%;
+            height: auto;
+       }
+
+       .titulo-quartos, .texto-quartos{
+            display: none;
+       }
+       
+       .oferecimento {
+        grid-template-columns: 1fr;
+        width: 100%;
+        }
+    
+        .oferecimento1, .oferecimento2 {
+        justify-content: center; 
+        text-align: center;
+        }
+
+        .mais-detalhes-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .aproveitar-ancora{
+            margin-bottom: 10px;
+        }
+
+        .subtitulo-2{
+            margin-top: 15px;
+        }
+
+        .comentarios{
+            display: none;
+        }
+
+        }
+
+    
+    @media (max-width: 1097px) {
+        .scroll-box{
+            display: none;
+        }
     }
+
+    @media (max-width: 901px) {
+        .titulo-quartos, .texto-quartos{
+            display: none;
+        }
+    }
+
