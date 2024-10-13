@@ -956,6 +956,11 @@ body{
     color: #222222;
 }
 
+.reserva_celular{
+    display: none;
+
+}
+
 /* -------------------------------------------------------------------- */
 
 .logo-img {
@@ -973,7 +978,7 @@ body{
 
 /* -------------------Responsividade------------------------------- */
 
-    @media (max-width: 743px) {
+@media (max-width: 743px) {
 
     /* ------------------Header---------------------- */
 
@@ -1059,4 +1064,32 @@ body{
             flex-direction: column;
             gap: 25px;
         }
+    }
+    /* -------------------------parte central----------------------- */
+    .scroll-box{
+        display: none;
+        
+    }
+    .reserva_celular{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+
+
+    .reservar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FF385c;
+        border-radius: 20%;
+        text-align: center;
+        color: white;
+        border-color: white;
+        justify-content: space-between;
+        
+
     }
